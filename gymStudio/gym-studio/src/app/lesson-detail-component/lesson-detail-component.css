@@ -1,0 +1,29 @@
+mat-card {
+  margin: 8px;
+}
+
+mat-card.started {
+  background: #fff4d7;
+}
+
+mat-card.started ::ng-deep .mat-card {
+  background: #fff4d7;
+}
+
+.lesson-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.lesson-field span {
+  font-weight: 600;
+}
+
+.lesson-status {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #b35900;
+}
+

@@ -1,0 +1,13 @@
+<section class="registrants-page">
+  <h2>רשימת נרשמות</h2>
+
+  <div class="ag-grid-container">
+    <ag-grid-angular
+      class="ag-theme-alpine"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      rowSelection="single"
+      (cellClicked)="onCellClicked($event)">
+    </ag-grid-angular>
+  </div>
+</section>

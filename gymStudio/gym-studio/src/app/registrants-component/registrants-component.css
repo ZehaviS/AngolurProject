@@ -1,0 +1,13 @@
+.registrants-page {
+  padding: 16px;
+}
+
+.registrants-page h2 {
+  margin-bottom: 16px;
+}
+
+.ag-grid-container {
+  width: 100%;
+  height: 500px;
+}
+

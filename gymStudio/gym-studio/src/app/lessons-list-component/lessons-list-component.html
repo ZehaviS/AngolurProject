@@ -1,0 +1,11 @@
+<section class="lessons-page">
+  <h2>רשימת שיעורים</h2>
+  <div class="lessons-gallery">
+    <app-lesson-detail-component
+      *ngFor="let lesson of lessons"
+      [lesson]="lesson"
+      [started]="lessonStarted(lesson)">
+    </app-lesson-detail-component>
+  </div>
+</section>
+

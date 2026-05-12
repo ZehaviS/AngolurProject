@@ -1,0 +1,15 @@
+<mat-card class="lesson-card" [class.started]="started" *ngIf="lesson">
+  <mat-card-header>
+    <mat-card-title>{{ lesson.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="lesson-field"><span>מורה:</span> {{ lesson.teacher }}</div>
+    <div class="lesson-field"><span>מספר מפגשים:</span> {{ lesson.sessions }}</div>
+    <div class="lesson-field"><span>תאריך התחלה:</span> {{ lesson.startDate | date:'dd/MM/yyyy' }}</div>
+    <div class="lesson-field"><span>מחיר:</span> ₪{{ lesson.price }}</div>
+    <div class="lesson-field"><span>יום:</span> {{ lesson.day }}</div>
+    <div class="lesson-field"><span>שעה:</span> {{ lesson.time }}</div>
+    <div class="lesson-status" *ngIf="started">השיעור כבר התחיל</div>
+  </mat-card-content>
+</mat-card>
+
