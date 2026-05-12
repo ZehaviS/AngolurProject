@@ -23,6 +23,47 @@ export class RegistrantsService {
       lesson: 'התעמלות בוקר',
       price: 300,
       paid: false
+    },{
+      id: '456789123',
+      firstName: 'אורי',
+      lastName: 'פרץ',
+      phone: '054-3333333',
+      lesson: 'זומבה',
+      price: 350,
+      paid: true
+    },{
+      id: '789123456',
+      firstName: 'רוני',
+      lastName: 'אלון', 
+      phone: '053-4444444',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: false
+    },
+    {
+      id: '321654987',
+      firstName: 'גיא',
+      lastName: 'ברק',
+      phone: '051-5555555',
+      lesson: 'התעמלות בוקר',
+      price: 300,
+      paid: true
+    },{
+      id: '654987321',
+      firstName: 'ליאור',
+      lastName: 'דוד',
+      phone: '052-6666666',
+      lesson: 'זומבה',
+      price: 350,
+      paid: false 
+    },{
+      id: '159753456',
+      firstName: 'אייל',
+      lastName: 'כהן',
+      phone: '050-7777777',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: false
     }
   ];
 

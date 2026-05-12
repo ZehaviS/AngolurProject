@@ -47,6 +47,7 @@ export class RegistrantsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+      console.log('service data:', this.registrantsService.getRegistrants());
     this.rowData = this.registrantsService.getRegistrants();
   }
 
@@ -58,4 +59,5 @@ export class RegistrantsComponent implements OnInit {
       });
     }
   }
+  
 }
