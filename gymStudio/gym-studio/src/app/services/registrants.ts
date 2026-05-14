@@ -16,6 +16,87 @@ export class RegistrantsService {
       paid: true
     },
     {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
+      id: '123456789',
+      firstName: 'דנה',
+      lastName: 'כהן',
+      phone: '050-1111111',
+      lesson: 'פילאטיס',
+      price: 400,
+      paid: true
+    },
+    {
       id: '987654321',
       firstName: 'נועה',
       lastName: 'לוי',

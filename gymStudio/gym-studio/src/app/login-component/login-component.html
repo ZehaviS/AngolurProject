@@ -4,16 +4,43 @@
 הוסיפי לחצן "כניסה". -->
 
 <section class="login-page">
-  <h1>כניסה למערכת</h1>
-  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-    <div class="form-group">
-      <label for="username">שם משתמש:</label>
-      <input type="text" id="username" formControlName="username" class="form-input">
+  <div class="login-card">
+    <div class="login-visual" aria-hidden="true">
+      <div class="visual-shape"></div>
     </div>
-    <div class="form-group">
-      <label for="password">סיסמא:</label>
-      <input type="password" id="password" formControlName="password" class="form-input">
-    </div>
-    <button mat-raised-button color="primary" type="submit">כניסה</button>
-  </form>
+
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div class="brand-row">
+        <div class="logo" aria-hidden="true">GS</div>
+        <div class="brand-text">
+          <h1>ברוכים הבאים</h1>
+          <p class="muted">התחברי לחשבונך כדי לנהל שיעורים ונרשמות</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="username">שם משתמש</label>
+        <input type="text" id="username" formControlName="username" class="form-input" placeholder="הקלידי שם משתמש">
+      </div>
+
+      <div class="form-group">
+        <label for="password">סיסמא</label>
+        <input type="password" id="password" formControlName="password" class="form-input" placeholder="הקלידי סיסמא">
+      </div>
+
+      <div class="form-row">
+        <label class="remember"><input type="checkbox"> זוכר אותי</label>
+        <a class="forgot" href="#">שכחת סיסמא?</a>
+      </div>
+
+      <button type="submit" class="btn-primary">כניסה</button>
+
+      <div class="divider"><span>או</span></div>
+
+      <div class="socials">
+        <button type="button" class="social-btn google">התחברות עם Google</button>
+        <button type="button" class="social-btn apple">התחברות עם Apple</button>
+      </div>
+    </form>
+  </div>
 </section>

@@ -2,28 +2,35 @@ mat-card {
   margin: 8px;
 }
 
-mat-card.started {
-  background: #fff4d7;
+mat-card {
+  margin: 8px;
+  padding: 14px;
+  border-radius: 14px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
-mat-card.started ::ng-deep .mat-card {
-  background: #fff4d7;
-}
+mat-card:hover { transform: translateY(-6px); }
+
+mat-card.started { box-shadow: 0 10px 30px rgba(124,92,255,0.12); }
 
 .lesson-field {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  color: var(--muted);
 }
 
-.lesson-field span {
-  font-weight: 600;
+.lesson-field span { font-weight: 700; color: #0b1220; }
+
+.lesson-status { margin-top: 12px; font-weight: 700; color: var(--accent-2); }
+
+.lesson-full {
+  margin-top: 10px;
+  display:inline-block;
+  background: linear-gradient(90deg,#ffd6e8,#ffdede);
+  color:#3b0b10;padding:6px 10px;border-radius:999px;font-weight:800;margin-right:4px
 }
 
-.lesson-status {
-  margin-top: 12px;
-  font-weight: 700;
-  color: #b35900;
-}
+.lesson-field .count { font-weight:700;color:#0b1220 }
 

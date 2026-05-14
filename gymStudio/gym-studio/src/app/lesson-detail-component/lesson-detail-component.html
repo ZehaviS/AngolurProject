@@ -10,6 +10,8 @@
     <div class="lesson-field"><span>יום:</span> {{ lesson.day }}</div>
     <div class="lesson-field"><span>שעה:</span> {{ lesson.time }}</div>
     <div class="lesson-status" *ngIf="started">השיעור כבר התחיל</div>
+    <div class="lesson-full" *ngIf="full">קבוצה מלאה</div>
+    <div class="lesson-field" *ngIf="!full"><span>נרשמות:</span> {{ registrantCount }}</div>
   </mat-card-content>
 </mat-card>
 

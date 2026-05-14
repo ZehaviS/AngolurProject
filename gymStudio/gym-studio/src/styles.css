@@ -1,3 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* Modern global styles + font + CSS variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 @import 'ag-grid-community/styles/ag-grid.css';
 @import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+:root {
+	--bg-1: #f8fafc; /* pale sky */
+	--bg-2: linear-gradient(135deg,#f8fafc 0%, #eef2ff 60%);
+	--card-bg: #ffffff;
+	--glass: rgba(255,255,255,0.9);
+	--muted: #556174;
+	--accent: #6d28d9; /* indigo */
+	--accent-2: #06b6d4; /* cyan */
+	--success: #16a34a;
+	--danger: #ef4444;
+	--glass-border: rgba(2,6,23,0.06);
+	--radius: 12px;
+	--smooth-shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: var(--bg-2);
+	color: #0b1220;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+main {
+	padding: 24px;
+}
+
+/* Utility */
+.muted { color: var(--muted); }
+
+/* Material card override for a modern glass look */
+mat-card {
+	background: var(--card-bg);
+	border: 1px solid var(--glass-border);
+	border-radius: var(--radius);
+	box-shadow: var(--smooth-shadow);
+	overflow: hidden;
+}
+
+.app-header {
+	display:flex;align-items:center;gap:12px;padding:18px 24px;margin-bottom:18px;
+}
+
+.brand {
+	font-weight:800;color:var(--accent);letter-spacing:0.3px;font-size:1.125rem
+}

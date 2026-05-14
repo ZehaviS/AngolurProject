@@ -35,4 +35,7 @@ body {
   // Reset the user agent margin.
   margin: 0;
   height: 100%;
+  // Make body blend with light app background
+  background: transparent;
+  color-scheme: light;
 }
